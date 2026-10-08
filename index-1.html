@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мебельный магазин — Теличко Аксинья</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,sans-serif;background:#f6f3ef;color:#292522}
+.cover{min-height:100vh;background:#d8c8b5;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+.cover-inner{max-width:900px}
+.cover h1{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,9vw,105px);line-height:.9;font-weight:700;letter-spacing:2px}
+.cover p{margin-top:25px;font-size:clamp(17px,2.3vw,24px);letter-spacing:3px;text-transform:uppercase}
+.enter{margin-top:45px;display:inline-block;padding:16px 34px;border:1px solid #292522;color:#292522;text-decoration:none;font-weight:600;transition:.25s}
+.enter:hover{background:#292522;color:#fff}
+header{position:sticky;top:0;z-index:10;background:#fffdf9eF;backdrop-filter:blur(10px);border-bottom:1px solid #e3ddd5}
+.nav{max-width:1180px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:700}
+nav a{color:#292522;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{max-width:1180px;margin:0 auto;padding:90px 24px 65px;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.hero h2{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,82px);line-height:.92;margin-bottom:25px}
+.hero p{max-width:570px;line-height:1.8;color:#665f58}
+.btn{display:inline-block;margin-top:28px;background:#292522;color:#fff;padding:15px 24px;text-decoration:none;border:0;cursor:pointer;font:600 14px Montserrat}
+.hero-card{height:450px;background:linear-gradient(135deg,#b9a18b,#eee5da);display:flex;align-items:flex-end;padding:30px}
+.hero-card span{background:#fffdf9;padding:12px 17px;font-weight:600}
+section{max-width:1180px;margin:auto;padding:65px 24px}
+.title{font-family:"Cormorant Garamond",serif;font-size:50px;margin-bottom:30px}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.cat{min-height:180px;background:#e5d8ca;padding:25px;display:flex;align-items:flex-end;font-family:"Cormorant Garamond",serif;font-size:30px;text-decoration:none;color:#292522}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#fffdf9;border:1px solid #e7e0d8}
+.product-img{height:260px;display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",serif;font-size:46px;color:#766858;background:#e9e0d6}
+.product-body{padding:20px}
+.product-body h3{font-family:"Cormorant Garamond",serif;font-size:28px}
+.price{font-weight:700;margin-top:10px}
+.product button{width:100%;margin-top:17px}
+.about{background:#292522;color:#fff;padding:70px max(24px,calc((100% - 1180px)/2))}
+.about p{max-width:760px;line-height:1.9;color:#ddd4ca}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-box{background:#fffdf9;padding:30px}
+.contact-box p{margin:12px 0;color:#665f58}
+footer{background:#1f1d1b;color:#ddd4ca;text-align:center;padding:25px;font-size:13px}
+.cart{position:fixed;right:22px;bottom:22px;background:#292522;color:white;padding:15px 20px;border-radius:30px;border:0;cursor:pointer;box-shadow:0 8px 25px #0003}
+#count{background:#d8c8b5;color:#292522;border-radius:50%;padding:3px 7px;margin-left:5px}
+@media(max-width:800px){
+ nav{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.hero-card{height:300px}
+ .categories{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr}.contact{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="cover-inner">
+    <h1>Теличко Аксинья</h1>
+    <p>9а класса • второй группы</p>
+    <a class="enter" href="#site">Войти на сайт</a>
+  </div>
+</div>
+
+<div id="site">
+<header>
+  <div class="nav">
+    <div class="logo">FORMA HOME</div>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О компании</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <h2>Мебель, которая создаёт дом</h2>
+    <p>Современная корпусная и мягкая мебель для гостиной, спальни, кухни и прихожей. Красивые решения для комфортного пространства без переплаты.</p>
+    <a class="btn" href="#catalog">Смотреть каталог</a>
+  </div>
+  <div class="hero-card"><span>Новая коллекция • 2026</span></div>
+</section>
+
+<section>
+  <h2 class="title">Категории</h2>
+  <div class="categories">
+    <a class="cat" href="#catalog">Гостиная</a>
+    <a class="cat" href="#catalog">Спальня</a>
+    <a class="cat" href="#catalog">Кухня</a>
+    <a class="cat" href="#catalog">Прихожая</a>
+  </div>
+</section>
+
+<section id="catalog">
+  <h2 class="title">Популярные товары</h2>
+  <div class="products">
+    <article class="product">
+      <div class="product-img">ДИВАН</div>
+      <div class="product-body"><h3>Диван «Luna»</h3><p>Мягкий диван для современной гостиной</p><div class="price">59 900 ₽</div><button class="btn add">Добавить в корзину</button></div>
+    </article>
+    <article class="product">
+      <div class="product-img">КРОВАТЬ</div>
+      <div class="product-body"><h3>Кровать «Nord»</h3><p>Лаконичная кровать с мягким изголовьем</p><div class="price">46 500 ₽</div><button class="btn add">Добавить в корзину</button></div>
+    </article>
+    <article class="product">
+      <div class="product-img">СТОЛ</div>
+      <div class="product-body"><h3>Стол «Loft»</h3><p>Обеденный стол для уютных семейных вечеров</p><div class="price">28 900 ₽</div><button class="btn add">Добавить в корзину</button></div>
+    </article>
+  </div>
+</section>
+
+<div class="about" id="about">
+  <h2 class="title">О компании</h2>
+  <p>FORMA HOME — мебельный магазин среднего ценового сегмента. Мы соединяем современный дизайн, практичные материалы и комфортную стоимость. Помогаем подобрать мебель под стиль, размеры помещения и бюджет.</p>
+</div>
+
+<section id="contact">
+  <h2 class="title">Контакты</h2>
+  <div class="contact">
+    <div class="contact-box"><h3>Шоурум</h3><p>г. Москва, ул. Мебельная, 15</p><p>Ежедневно: 10:00–20:00</p></div>
+    <div class="contact-box"><h3>Связаться с нами</h3><p>Телефон: +7 (900) 000-00-00</p><p>Email: hello@formahome.ru</p><button class="btn" onclick="alert('Спасибо! Мы свяжемся с вами.')">Получить консультацию</button></div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 FORMA HOME • Учебный проект Теличко Аксиньи</footer>
+<button class="cart" onclick="alert('В корзине товаров: '+count)">Корзина <span id="count">0</span></button>
+</div>
+
+<script>
+let count=0;
+document.querySelectorAll('.add').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  count++;
+  document.getElementById('count').textContent=count;
+  btn.textContent='Добавлено ✓';
+  setTimeout(()=>btn.textContent='Добавить в корзину',1000);
+ });
+});
+</script>
+</body>
+</html>
